@@ -54,7 +54,8 @@ let novo_item = {
     url_img: "",
     descricao: ""
 }
-const button_add = document.getElementById("button-add");
+const button_add_open = document.getElementById("button-add-open");
+const button_add_close = document.getElementById("button-add-close");
 const modal_add = document.getElementById("dialog-add");
 
 // ITENS_LOJA.push(novo_item);
@@ -71,6 +72,9 @@ for (let i=0; i<ITENS_LOJA.length; i++){
     </div>`;
 }
 
-button_add.onclick = function() {
+button_add_open.onclick = function() {
     modal_add.showModal();
+}
+button_add_close.onclick = function() {
+    modal_add.close();
 }

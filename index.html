@@ -11,7 +11,7 @@
     <section id="sessao-venda">
         <h1>Lojinha do Sr. Miagui</h1>
         <section id="action-buttons">
-            <button id="button-add">Adicionar produto</button>
+            <button id="button-add-open">Adicionar produto</button>
         </section>
         <section id="itens_section">
         
@@ -26,7 +26,7 @@
             </fieldset>
             <fieldset>
                 <legend>Preço</legend>
-                <input type="number" step="0.01" min="0.01" required>
+                <input type="number" step="0.01" min="0.01" value="0" required>
             </fieldset>
             <fieldset>
                 <legend>Descrição</legend>
@@ -39,7 +39,7 @@
         </form>
         <div>
             <button form="form-add" type="submit">Cadastrar</button>
-            <button>Cancelar</button>
+            <button id="button-add-close" form="form-add" type="reset">Cancelar</button>
         </div>
     </dialog>
     <script src="interaction.js"></script>
