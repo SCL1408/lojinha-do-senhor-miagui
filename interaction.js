@@ -90,5 +90,16 @@ function cadastrar () {
     novo_item.descricao = document.getElementById("id-descricao");
     // novo_item.url_img = document.getElementById("id-foto");
     ITENS_LOJA.push(novo_item);
-    modal_add.close();
+    setTimeout(modal_add.close, 20000);
+    // modal_add.close();
+    // document.getElementById("itens_section").innerHTML += `
+    // <div class="card-produto">
+    //     <img src="${novo_item.url_img}" alt="">
+    //     <h2>${novo_item.nome}</h2>
+    //     <p>Preço: R$${novo_item.preco}</p>
+    //     <p>
+    //         <strong>Descrição:<br></strong>
+    //         ${novo_item.descricao}
+    //     </p>
+    // </div>`;
 }
