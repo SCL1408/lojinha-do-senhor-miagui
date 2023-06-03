@@ -5,6 +5,7 @@ h1, h2, p{
 body{
     font: normal 15px Arial;
     width: 100%;
+    overflow-x: hidden;
 }
 body, #sessao-venda, .card-produto{
     display: flex;
