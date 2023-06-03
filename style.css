@@ -51,3 +51,21 @@ body, #sessao-venda, .card-produto{
 #action-buttons button{
     padding: .5%;
 }
+dialog{
+    padding: 4%;
+}
+dialog form{
+    margin: 10% 0;
+}
+dialog div button{
+    padding: 2%;
+}
+input[type="text"], input[type="number"], textarea{
+    width: 90%;
+    padding: 4px;
+}
+textarea{
+    resize: vertical;
+    min-height: 85px;
+    max-height: 350px;
+}

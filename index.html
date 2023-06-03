@@ -17,6 +17,31 @@
         
         </section>
     </section>
+    <dialog id="dialog-add">
+        <h2>Adicione um novo produto</h2>
+        <form action="POST" id="form-add">
+            <fieldset>
+                <legend>Nome do produto</legend>
+                <input type="text" required>
+            </fieldset>
+            <fieldset>
+                <legend>Preço</legend>
+                <input type="number" step="0.01" min="0.01" required>
+            </fieldset>
+            <fieldset>
+                <legend>Descrição</legend>
+                <textarea name="" id="" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Foto</legend>
+                <input type="file" accept=".png, .jpg, .jpeg" required>
+            </fieldset>
+        </form>
+        <div>
+            <button form="form-add" type="submit">Cadastrar</button>
+            <button>Cancelar</button>
+        </div>
+    </dialog>
     <script src="interaction.js"></script>
 </body>
 </html>
