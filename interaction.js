@@ -48,3 +48,15 @@ let ITENS_LOJA = [
         descricao:"Vinho que harmoniza muito bem com carnes vermelhas "
     }
 ]
+for (let i=0; i<ITENS_LOJA.length; i++){
+    document.getElementById("itens_section").innerHTML += `
+    <div class="card-produto">
+        <img src="${ITENS_LOJA[i].url_img}" alt="">
+        <h2>${ITENS_LOJA[i].nome}</h2>
+        <p>Preço: R$${ITENS_LOJA[i].preco}</p>
+        <p>
+            <strong>Descrição:<br></strong>
+            ${ITENS_LOJA[i].descricao}
+        </p>
+    </div>`;
+}
