@@ -48,17 +48,20 @@ let ITENS_LOJA = [
         descricao:"Vinho que harmoniza muito bem com carnes vermelhas "
     }
 ]
+//objeto utilizado para adicionar novos produtos ao catálogo
 let novo_item = {
     nome: "",
     preco: "",
     url_img: "",
     descricao: ""
 }
-const button_add_open = document.getElementById("button-add-open");
-const button_add_close = document.getElementById("button-add-close");
-const modal_add = document.getElementById("dialog-add");
+const button_add_open = document.getElementById("button-add-open");//recebe o botão de abertura do modal de cadastro
+const button_add_close = document.getElementById("button-add-close");//recebe o botão de fechamento do modal de cadastro
+const modal_add = document.getElementById("dialog-add");//recebe o modal de cadastro
 
 // ITENS_LOJA.push(novo_item);
+
+//exibe produtos na tela
 for (let i=0; i<ITENS_LOJA.length; i++){
     document.getElementById("itens_section").innerHTML += `
     <div class="card-produto">
@@ -72,9 +75,11 @@ for (let i=0; i<ITENS_LOJA.length; i++){
     </div>`;
 }
 
+//abre o mdal de cadatro
 button_add_open.onclick = function() {
     modal_add.showModal();
 }
+//fecha o modal de cadastro
 button_add_close.onclick = function() {
     modal_add.close();
 }
