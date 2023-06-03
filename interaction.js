@@ -58,8 +58,8 @@ let novo_item = {
 const button_add_open = document.getElementById("button-add-open");//recebe o botão de abertura do modal de cadastro
 const button_add_close = document.getElementById("button-add-close");//recebe o botão de fechamento do modal de cadastro
 const modal_add = document.getElementById("dialog-add");//recebe o modal de cadastro
-
-// ITENS_LOJA.push(novo_item);
+const button_add_submit = document.getElementById("button-add-submit");
+button_add_submit.addEventListener("click", cadastrar);
 
 //exibe produtos na tela
 for (let i=0; i<ITENS_LOJA.length; i++){
@@ -81,5 +81,14 @@ button_add_open.onclick = function() {
 }
 //fecha o modal de cadastro
 button_add_close.onclick = function() {
+    modal_add.close();
+}
+
+function cadastrar () {
+    novo_item.nome = document.getElementById("id-nome");
+    novo_item.preco = document.getElementById("id-preco");
+    novo_item.descricao = document.getElementById("id-descricao");
+    // novo_item.url_img = document.getElementById("id-foto");
+    ITENS_LOJA.push(novo_item);
     modal_add.close();
 }
