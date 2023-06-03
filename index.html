@@ -10,38 +10,10 @@
 <body>
     <section id="sessao-venda">
         <h1>Lojinha do Sr. Miagui</h1>
-        <section id="action-buttons">
-            <button id="button-add-open">Adicionar produto</button>
-        </section>
         <section id="itens_section">
         
         </section>
     </section>
-    <dialog id="dialog-add">
-        <h2>Adicione um novo produto</h2>
-        <form action="" id="form-add">
-            <fieldset>
-                <legend>Nome do produto</legend>
-                <input type="text" id="id-nome" required>
-            </fieldset>
-            <fieldset>
-                <legend>Preço</legend>
-                <input type="number" id="id-preco" step="0.01" min="0.01" value="0" required>
-            </fieldset>
-            <fieldset>
-                <legend>Descrição</legend>
-                <textarea name="" id="id-descricao" required></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Foto</legend>
-                <input type="file" id="id-foto" accept=".png, .jpg, .jpeg" required>
-            </fieldset>
-        </form>
-        <div>
-            <button id="button-add-submit" form="form-add" type="submit">Cadastrar</button>
-            <button id="button-add-close" form="form-add" type="reset">Cancelar</button>
-        </div>
-    </dialog>
     <script src="interaction.js"></script>
 </body>
 </html>
