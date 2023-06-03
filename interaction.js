@@ -54,11 +54,11 @@ let novo_item = {
     url_img: "",
     descricao: ""
 }
-novo_item.nome = window.prompt(`Nome:`);
-novo_item.preco = Number(window.prompt(`Preço:`));
-novo_item.url_img = window.prompt(`Imagem:`);
-novo_item.descricao = window.prompt(`Descrição:`);
-ITENS_LOJA.push(novo_item);
+// novo_item.nome = window.prompt(`Nome:`);
+// novo_item.preco = Number(window.prompt(`Preço:`));
+// novo_item.url_img = window.prompt(`Imagem:`);
+// novo_item.descricao = window.prompt(`Descrição:`);
+// ITENS_LOJA.push(novo_item);
 for (let i=0; i<ITENS_LOJA.length; i++){
     document.getElementById("itens_section").innerHTML += `
     <div class="card-produto">
