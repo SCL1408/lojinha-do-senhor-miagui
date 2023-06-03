@@ -1,0 +1,42 @@
+h1, h2, p{
+    margin: 0px;
+    text-align: center;
+}
+body{
+    font: normal 15px Arial;
+    width: 100%;
+}
+body, #sessao-venda, .card-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sessao-venda{
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+}
+#itens_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 4%;
+
+    width: 90%;
+}
+.card-produto{
+    border: 3px solid #4c779c;
+    border-radius: 16px;
+    width: 200px;
+    height: 325px;
+    padding: 1%;
+
+    justify-content: space-between;
+}
+.card-produto img{
+    max-width: 80%;
+}
+.card-produto p{
+    font-size: 0.8em;
+}
